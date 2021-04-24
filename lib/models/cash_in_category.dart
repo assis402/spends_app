@@ -1,0 +1,4 @@
+enum CashInCategory {
+  wage,
+  other,
+}

@@ -1,22 +1,23 @@
-import 'package:spends_app/models/cashin.dart';
+import 'package:spends_app/models/cash_in_category.dart';
+import 'package:spends_app/models/cash_in.dart';
 
 const DUMMY_CASHIN = {
   '1': const CashIn(
     id: '1',
-    title: 'Salário',
+    description: 'Salário',
     value: 1400.00,
-    description: '',
+    category: CashInCategory.wage,
   ),
   '2': const CashIn(
     id: '2',
-    title: 'Loja',
-    value: 500.00,
     description: 'Rendimentos da minha loja online',
+    value: 500.00,
+    category: CashInCategory.other,
   ),
   '3': const CashIn(
     id: '3',
-    title: 'Youtube',
-    value: 100.00,
     description: 'Rendimentos Canal no Youtube',
+    value: 100.00,
+    category: CashInCategory.other,
   ),
 };
